@@ -71,7 +71,7 @@
 
 ### Topologi
 
-![Alt text](<images/Screenshot 2023-12-06 150723.png>)
+![Alt text](<images/Screenshot topologi.png>)
 
 ### Subnetting
 
@@ -400,3 +400,334 @@ iface eth0 inet static
 	netmask 255.255.255.0
 	gateway 10.27.4.1
 ```
+
+- Stark
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.26
+	netmask 255.255.255.252
+	gateway 10.27.0.25
+```
+
+- Denken
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.2
+	netmask 255.255.255.252
+	gateway 10.27.0.1
+
+auto eth1
+iface eth1 inet static
+	address 10.27.2.1
+	netmask 255.255.255.0
+```
+
+- RoyalCapital
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.2.2
+	netmask 255.255.255.0
+	gateway 10.27.2.1
+```
+
+- WilleRegion
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.2.3
+	netmask 255.255.255.0
+	gateway 10.27.2.1
+```
+
+### Routing
+
+Mengatur konfigurasi untuk routing pada router tertentu dengan command
+
+```
+route add -net <NID subnet> netmask <netmask> gw <IP gateway>
+```
+
+Berikut adalah tabel routing tiap router yang terpakai
+
+<style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:white;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:white;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-a5cz{background-color:;text-align:center;vertical-align:bottom}
+.tg .tg-baqh{text-align:center;vertical-align:center}
+.tg .tg-7zrl{text-align:center;vertical-align:center}
+.tg .tg-nrix{text-align:center;vertical-align:center}
+</style>
+<table class="tg">
+<thead>
+  <tr>
+    <th class="tg-a5cz"><span>Router</span></th>
+    <th class="tg-a5cz"><span>Subnet</span></th>
+    <th class="tg-a5cz"><span>Network</span></th>
+    <th class="tg-a5cz"><span>Netmask</span></th>
+    <th class="tg-a5cz"><span>Gateway</span></th>
+    <th class="tg-a5cz"><span>Console</span></th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-baqh" rowspan="18">Aura</td>
+    <td class="tg-7zrl">A1</td>
+    <td class="tg-7zrl">10.27.16.0</td>
+    <td class="tg-7zrl">255.255.252.0</td>
+    <td class="tg-7zrl">10.27.0.22</td>
+    <td class="tg-7zrl">route add -net 10.27.16.0 netmask 255.255.252.0 gw 10.27.0.22</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A2</td>
+    <td class="tg-7zrl">10.27.0.128</td>
+    <td class="tg-7zrl">255.255.255.192</td>
+    <td class="tg-7zrl">10.27.0.22</td>
+    <td class="tg-7zrl">route add -net 10.27.0.128 netmask 255.255.255.192 gw 10.27.0.22</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A3</td>
+    <td class="tg-7zrl">10.27.0.36</td>
+    <td class="tg-7zrl">255.255.255.252</td>
+    <td class="tg-7zrl">10.27.0.22</td>
+    <td class="tg-7zrl">route add -net 10.27.0.36 netmask 255.255.255.252 gw 10.27.0.22</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A4</td>
+    <td class="tg-7zrl">10.27.6.0</td>
+    <td class="tg-7zrl">255.255.254.0</td>
+    <td class="tg-7zrl">10.27.0.22</td>
+    <td class="tg-7zrl">route add -net 10.27.6.0 netmask 255.255.254.0 gw 10.27.0.22</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A5</td>
+    <td class="tg-7zrl">10.27.0.32</td>
+    <td class="tg-7zrl">255.255.255.252</td>
+    <td class="tg-7zrl">10.27.0.22</td>
+    <td class="tg-7zrl">route add -net 10.27.0.32 netmask 255.255.255.252 gw 10.27.0.22</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A6</td>
+    <td class="tg-7zrl">10.27.0.48</td>
+    <td class="tg-7zrl">255.255.255.248</td>
+    <td class="tg-7zrl">10.27.0.22</td>
+    <td class="tg-7zrl">route add -net 10.27.0.48 netmask 255.255.255.248 gw 10.27.0.22</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A7</td>
+    <td class="tg-7zrl">10.27.0.28</td>
+    <td class="tg-7zrl">255.255.255.252</td>
+    <td class="tg-7zrl">10.27.0.22</td>
+    <td class="tg-7zrl">route add -net 10.27.0.28 netmask 255.255.255.252 gw 10.27.0.22</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A8</td>
+    <td class="tg-7zrl">10.27.12.0</td>
+    <td class="tg-7zrl">255.255.252.0</td>
+    <td class="tg-7zrl">10.27.0.22</td>
+    <td class="tg-7zrl">route add -net 10.27.12.0 netmask 255.255.252.0 gw 10.27.0.22</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A9</td>
+    <td class="tg-7zrl">10.27.4.0</td>
+    <td class="tg-7zrl">255.255.255.0</td>
+    <td class="tg-7zrl">10.27.0.22</td>
+    <td class="tg-7zrl">route add -net 10.27.4.0 netmask 255.255.255.0 gw 10.27.0.22</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A10</td>
+    <td class="tg-7zrl">10.27.0.24</td>
+    <td class="tg-7zrl">255.255.255.252</td>
+    <td class="tg-7zrl">10.27.0.22</td>
+    <td class="tg-7zrl">route add -net 10.27.0.24 netmask 255.255.255.252 gw 10.27.0.22</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A13</td>
+    <td class="tg-7zrl">10.27.0.64</td>
+    <td class="tg-7zrl">255.255.255.224</td>
+    <td class="tg-7zrl">10.27.0.18</td>
+    <td class="tg-7zrl">route add -net 10.27.0.64 netmask 255.255.255.224 gw 10.27.0.18</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A14</td>
+    <td class="tg-7zrl">10.27.0.12</td>
+    <td class="tg-7zrl">255.255.255.252</td>
+    <td class="tg-7zrl">10.27.0.18</td>
+    <td class="tg-7zrl">route add -net 10.27.0.12 netmask 255.255.255.252 gw 10.27.0.18</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A15</td>
+    <td class="tg-7zrl">10.27.0.8</td>
+    <td class="tg-7zrl">255.255.255.252</td>
+    <td class="tg-7zrl">10.27.0.18</td>
+    <td class="tg-7zrl">route add -net 10.27.0.8 netmask 255.255.255.252 gw 10.27.0.18</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A16</td>
+    <td class="tg-7zrl">10.27.0.40</td>
+    <td class="tg-7zrl">255.255.255.248</td>
+    <td class="tg-7zrl">10.27.0.18</td>
+    <td class="tg-7zrl">route add -net 10.27.0.40 netmask 255.255.255.248 gw 10.27.0.18</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A17</td>
+    <td class="tg-7zrl">10.27.8.0</td>
+    <td class="tg-7zrl">255.255.252.0</td>
+    <td class="tg-7zrl">10.27.0.18</td>
+    <td class="tg-7zrl">route add -net 10.27.8.0 netmask 255.255.252.0 gw 10.27.0.18</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A18</td>
+    <td class="tg-7zrl">10.27.0.4</td>
+    <td class="tg-7zrl">255.255.255.252</td>
+    <td class="tg-7zrl">10.27.0.18</td>
+    <td class="tg-7zrl">route add -net 10.27.0.4 netmask 255.255.255.252 gw 10.27.0.18</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A19</td>
+    <td class="tg-7zrl">10.27.24.0</td>
+    <td class="tg-7zrl">255.255.248.0</td>
+    <td class="tg-7zrl">10.27.0.18</td>
+    <td class="tg-7zrl">route add -net 10.27.24.0 netmask 255.255.248.0 gw 10.27.0.18</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A21</td>
+    <td class="tg-7zrl">10.27.2.0</td>
+    <td class="tg-7zrl">255.255.255.0</td>
+    <td class="tg-7zrl">10.27.0.2</td>
+    <td class="tg-7zrl">route add -net 10.27.2.0 netmask 255.255.255.0 gw 10.27.0.2</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh" rowspan="5">Frieren</td>
+    <td class="tg-7zrl">A15</td>
+    <td class="tg-7zrl">10.27.0.8</td>
+    <td class="tg-7zrl">255.255.255.252</td>
+    <td class="tg-7zrl">10.27.0.14</td>
+    <td class="tg-7zrl">route add -net 10.27.0.8 netmask 255.255.255.252 gw 10.27.0.14</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A16</td>
+    <td class="tg-7zrl">10.27.0.40</td>
+    <td class="tg-7zrl">255.255.255.248</td>
+    <td class="tg-7zrl">10.27.0.14</td>
+    <td class="tg-7zrl">route add -net 10.27.0.40 netmask 255.255.255.248 gw 10.27.0.14</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A17</td>
+    <td class="tg-7zrl">10.27.8.0</td>
+    <td class="tg-7zrl">255.255.252.0</td>
+    <td class="tg-7zrl">10.27.0.14</td>
+    <td class="tg-7zrl">route add -net 10.27.8.0 netmask 255.255.252.0 gw 10.27.0.14</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A18</td>
+    <td class="tg-7zrl">10.27.0.4</td>
+    <td class="tg-7zrl">255.255.255.252</td>
+    <td class="tg-7zrl">10.27.0.14</td>
+    <td class="tg-7zrl">route add -net 10.27.0.4 netmask 255.255.255.252 gw 10.27.0.14</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A19</td>
+    <td class="tg-7zrl">10.27.24.0</td>
+    <td class="tg-7zrl">255.255.248.0</td>
+    <td class="tg-7zrl">10.27.0.14</td>
+    <td class="tg-7zrl">route add -net 10.27.24.0 netmask 255.255.248.0 gw 10.27.0.14</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh" rowspan="2">Flamme</td>
+    <td class="tg-7zrl">A16</td>
+    <td class="tg-7zrl">10.27.0.40</td>
+    <td class="tg-7zrl">255.255.255.248</td>
+    <td class="tg-7zrl">10.27.0.10</td>
+    <td class="tg-7zrl">route add -net 10.27.0.40 netmask 255.255.255.248 gw 10.27.0.10</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A19</td>
+    <td class="tg-7zrl">10.27.24.0</td>
+    <td class="tg-7zrl">255.255.248.0</td>
+    <td class="tg-7zrl">10.27.0.6</td>
+    <td class="tg-7zrl">route add -net 10.27.24.0 netmask 255.255.248.0 gw 10.27.0.6</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh" rowspan="6">Eisen</td>
+    <td class="tg-7zrl">A1</td>
+    <td class="tg-7zrl">10.27.16.0</td>
+    <td class="tg-7zrl">255.255.252.0</td>
+    <td class="tg-7zrl">10.27.0.34</td>
+    <td class="tg-7zrl">route add -net 10.27.16.0 netmask 255.255.252.0 gw 10.27.0.34</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A2</td>
+    <td class="tg-7zrl">10.27.0.128</td>
+    <td class="tg-7zrl">255.255.255.192</td>
+    <td class="tg-7zrl">10.27.0.34</td>
+    <td class="tg-7zrl">route add -net 10.27.0.128 netmask 255.255.255.192 gw 10.27.0.34</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A3</td>
+    <td class="tg-7zrl">10.27.0.36</td>
+    <td class="tg-7zrl">255.255.255.252</td>
+    <td class="tg-7zrl">10.27.0.34</td>
+    <td class="tg-7zrl">route add -net 10.27.0.36 netmask 255.255.255.252 gw 10.27.0.34</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A4</td>
+    <td class="tg-7zrl">10.27.6.0</td>
+    <td class="tg-7zrl">255.255.254.0</td>
+    <td class="tg-7zrl">10.27.0.34</td>
+    <td class="tg-7zrl">route add -net 10.27.6.0 netmask 255.255.254.0 gw 10.27.0.34</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A8</td>
+    <td class="tg-7zrl">10.27.12.0</td>
+    <td class="tg-7zrl">255.255.252.0</td>
+    <td class="tg-7zrl">10.27.0.30</td>
+    <td class="tg-7zrl">route add -net 10.27.12.0 netmask 255.255.252.0 gw 10.27.0.30</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A9</td>
+    <td class="tg-7zrl">10.27.4.0</td>
+    <td class="tg-7zrl">255.255.255.0</td>
+    <td class="tg-7zrl">10.27.0.30</td>
+    <td class="tg-7zrl">route add -net 10.27.4.0 netmask 255.255.255.0 gw 10.27.0.30</td>
+  </tr>
+  <tr>
+    <td class="tg-baqh" rowspan="2">Linie</td>
+    <td class="tg-7zrl">A1</td>
+    <td class="tg-7zrl">10.27.16.0</td>
+    <td class="tg-7zrl">255.255.252.0</td>
+    <td class="tg-7zrl">10.27.0.38</td>
+    <td class="tg-7zrl">route add -net 10.27.16.0 netmask 255.255.252.0 gw 10.27.0.38</td>
+  </tr>
+  <tr>
+    <td class="tg-7zrl">A2</td>
+    <td class="tg-7zrl">10.27.0.128</td>
+    <td class="tg-7zrl">255.255.255.192</td>
+    <td class="tg-7zrl">10.27.0.38</td>
+    <td class="tg-7zrl">route add -net 10.27.0.128 netmask 255.255.252.192 gw 10.27.0.38</td>
+  </tr>
+  <tr>
+    <td class="tg-nrix">Lawine</td>
+    <td class="tg-7zrl">A1</td>
+    <td class="tg-7zrl">10.27.16.0</td>
+    <td class="tg-7zrl">255.255.252.0</td>
+    <td class="tg-7zrl">10.27.0.131</td>
+    <td class="tg-7zrl">route add -net 10.27.16.0 netmask 255.255.252.0 gw 10.27.0.131</td>
+  </tr>
+</tbody>
+</table>
+
+### Testing
+
+Melakukan testing dengan `ping` dari `Stark` ke IP `ApetitRegion` dan `GrobeForest`
+
+![Alt text](<images/Screenshot (185).png>)
