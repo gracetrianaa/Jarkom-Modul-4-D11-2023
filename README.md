@@ -728,10 +728,9 @@ Melakukan testing dengan `ping` dari `Stark` ke IP `ApetitRegion` dan `GrobeFore
 
 ## CIDR-CPT
 
-### Subnetting
-
-
 ### Penggabungan CIDR
+
+![Screenshot 2023-12-06 211853](https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/401ad45e-719f-41b7-8f15-d3a8b94b0d0a)
 
 <img width="579" alt="image" src="https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/5875b1ad-40c8-4081-bc6c-507de5c50dce">
 
@@ -748,3 +747,13 @@ Melakukan testing dengan `ping` dari `Stark` ke IP `ApetitRegion` dan `GrobeFore
 ### Tree CIDR
 
 ![CIDR TREE](https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/ec6d4f2e-bea4-427e-9ac5-9c6b42257f75)
+
+### Routing
+
+contoh setup routing di aura 
+
+<img width="521" alt="image" src="https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/3626291e-25d8-4549-a861-5d10bd92fd33">
+
+### Testing
+
+<img width="425" alt="image" src="https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/24dfa4fc-a9be-4654-9897-edb788624889">
