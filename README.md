@@ -456,17 +456,6 @@ route add -net <NID subnet> netmask <netmask> gw <IP gateway>
 
 Berikut adalah tabel routing tiap router yang terpakai
 
-<style type="text/css">
-.tg  {border-collapse:collapse;border-spacing:0;}
-.tg td{border-color:white;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg th{border-color:white;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-.tg .tg-a5cz{background-color:;text-align:center;vertical-align:bottom}
-.tg .tg-baqh{text-align:center;vertical-align:center}
-.tg .tg-7zrl{text-align:center;vertical-align:center}
-.tg .tg-nrix{text-align:center;vertical-align:center}
-</style>
 <table class="tg">
 <thead>
   <tr>
