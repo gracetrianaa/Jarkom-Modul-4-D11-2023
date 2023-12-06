@@ -72,3 +72,331 @@
 ### Topologi
 
 ![Alt text](<images/Screenshot 2023-12-06 150723.png>)
+
+### Subnetting
+
+Melakukan konfigurasi interface pada `Edit Network Configuration` untuk mengatur IP tiap interfacenya.
+
+- Aura
+
+```
+auto eth1
+iface eth1 inet static
+	address 10.27.0.1
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.27.0.17
+	netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+	address 10.27.0.21
+	netmask 255.255.255.252
+```
+
+- Frieren
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.18
+	netmask 255.255.255.252
+	gateway 10.27.0.17
+
+auto eth1
+iface eth1 inet static
+	address 10.27.0.13
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.27.0.65
+	netmask 255.255.255.224
+```
+
+- Flamme
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.14
+	netmask 255.255.255.252
+	gateway 10.27.0.13
+
+auto eth1
+iface eth1 inet static
+	address 10.27.0.5
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.27.0.9
+	netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+	address 10.27.8.1
+	netmask 255.255.252.0
+```
+
+- Himmel
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.10
+	netmask 255.255.255.252
+	gateway 10.27.0.9
+
+auto eth1
+iface eth1 inet static
+	address 10.27.0.41
+	netmask 255.255.255.248
+```
+
+- SchwerMountains
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.42
+	netmask 255.255.252.0
+	gateway 10.27.0.41
+```
+
+- Fern
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.6
+	netmask 255.255.255.252
+	gateway 10.27.0.5
+
+auto eth1
+iface eth1 inet static
+	address 10.27.24.1
+	netmask 255.255.248.0
+```
+
+- LaubHills
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.24.2
+	netmask 255.255.248.0
+	gateway 10.27.24.1
+```
+
+- AppetitRegion
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.24.3
+	netmask 255.255.248.0
+	gateway 10.27.24.1
+```
+
+- RohrRoad
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.8.2
+	netmask 255.255.252.0
+	gateway 10.27.8.1
+```
+
+- LakeKorridor
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.66
+	netmask 255.255.255.224
+	gateway 10.27.0.65
+```
+
+- Eisen
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.22
+	netmask 255.255.255.252
+	gateway 10.27.0.21
+
+auto eth1
+iface eth1 inet static
+	address 10.27.0.33
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.27.0.29
+	netmask 255.255.255.252
+
+auto eth3
+iface eth3 inet static
+	address 10.27.0.25
+	netmask 255.255.255.252
+
+auto eth4
+iface eth4 inet static
+	address 10.27.0.49
+	netmask 255.255.255.248
+```
+
+- Linie
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.34
+	netmask 255.255.255.252
+	gateway 10.27.0.33
+
+auto eth1
+iface eth1 inet static
+	address 10.27.0.37
+	netmask 255.255.255.252
+
+auto eth2
+iface eth2 inet static
+	address 10.27.6.1
+	netmask 255.255.254.0
+```
+
+- Lawine
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.38
+	netmask 255.255.255.252
+	gateway 10.27.0.37
+
+auto eth1
+iface eth1 inet static
+	address 10.27.0.129
+	netmask 255.255.255.192
+```
+
+- Heiter
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.131
+	netmask 255.255.255.192
+	gateway 10.27.0.129
+
+auto eth1
+iface eth1 inet static
+	address 10.27.16.1
+	netmask 255.255.252.0
+```
+
+- Sein
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.16.2
+	netmask 255.255.252.0
+	gateway 10.27.16.1
+```
+
+- RiegelCanyon
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.16.3
+	netmask 255.255.252.0
+	gateway 10.27.16.1
+```
+
+- BredtRegion
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.130
+	netmask 255.255.255.192
+	gateway 10.27.0.129
+```
+
+- GranzChannel
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.6.2
+	netmask 255.255.254.0
+	gateway 10.27.6.1
+```
+
+- Richter
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.50
+	netmask 255.255.255.248
+	gateway 10.27.0.49
+```
+
+- Revolte
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.51
+	netmask 255.255.255.248
+	gateway 10.27.0.49
+```
+
+- Lugner
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.0.30
+	netmask 255.255.255.252
+	gateway 10.27.0.29
+
+auto eth1
+iface eth1 inet static
+	address 10.27.12.1
+	netmask 255.255.252.0
+
+auto eth2
+iface eth2 inet static
+	address 10.27.4.1
+	netmask 255.255.255.0
+```
+
+- TurkRegion
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.12.2
+	netmask 255.255.252.0
+	gateway 10.27.12.1
+```
+
+- GrobeForest
+
+```
+auto eth0
+iface eth0 inet static
+	address 10.27.4.2
+	netmask 255.255.255.0
+	gateway 10.27.4.1
+```
