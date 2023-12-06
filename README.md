@@ -725,3 +725,26 @@ Berikut adalah tabel routing tiap router yang terpakai
 Melakukan testing dengan `ping` dari `Stark` ke IP `ApetitRegion` dan `GrobeForest`
 
 ![Alt text](<images/Screenshot (185).png>)
+
+## CIDR-CPT
+
+### Subnetting
+
+
+### Penggabungan CIDR
+
+<img width="579" alt="image" src="https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/5875b1ad-40c8-4081-bc6c-507de5c50dce">
+
+<img width="563" alt="image" src="https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/6f721a2f-de9c-4e57-af7e-9c10c9c99a01">
+
+<img width="559" alt="image" src="https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/63a4f8db-2dc5-43a6-9877-621e136c94c5">
+
+<img width="557" alt="image" src="https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/e48aed84-94f7-497f-b39a-7bbd2b4a5fb1">
+
+<img width="560" alt="image" src="https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/c90978cb-6d9f-47a8-b764-4c63fba30eea">
+
+<img width="559" alt="image" src="https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/5f9a1e7d-1c6a-4073-b930-26fdc015c27a">
+
+### Tree CIDR
+
+![CIDR TREE](https://github.com/gracetrianaa/Jarkom-Modul-4-D11-2023/assets/130858750/ec6d4f2e-bea4-427e-9ac5-9c6b42257f75)
