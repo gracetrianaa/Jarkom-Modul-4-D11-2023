@@ -12,7 +12,7 @@
 
 ### Rute
 
-![Alt text](vlsm_topologi_21.png)
+![Alt text](images/vlsm_topologi_21.png)
 
 | Nama Subnet | Rute                                            | Jumlah IP | Netmask |
 | ----------- | ----------------------------------------------- | --------- | ------- |
@@ -41,7 +41,7 @@
 
 ### Pohon IP
 
-![Alt text](<jarkom modul 4_vlsm tree.jpg>)
+![Alt text](<images/jarkom modul 4_vlsm tree.jpg>)
 
 #### Pembagian IP berdasarkan Pohon IP
 
@@ -71,4 +71,4 @@
 
 ### Topologi
 
-![Alt text](<Screenshot 2023-12-06 150723.png>)
+![Alt text](<images/Screenshot 2023-12-06 150723.png>)
